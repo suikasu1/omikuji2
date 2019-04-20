@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="omikuji2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Adh-U3-nK7">
+                                <rect key="frame" x="0.0" y="44" width="375" height="459"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="459" id="Jde-7y-kDj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyv-VW-yw5">
+                                <rect key="frame" x="-2" y="221.00000000000003" width="379" height="105.33333333333334"/>
+                                <string key="text">プログラミング言語おみくじ
+「おみくじを引く」を押してみよう！
+
+↓</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.78823529410000004" green="0.090196078430000007" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" text="結果発表" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JE3-r2-5sD">
+                                <rect key="frame" x="0.0" y="503" width="375" height="139"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.78823529411764703" green="0.090196078431372548" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rt-IG-e7X">
+                                <rect key="frame" x="0.0" y="678" width="375" height="100"/>
+                                <color key="backgroundColor" red="0.78931492567062378" green="0.090089134871959686" blue="0.11841926723718643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="mFe-Nj-7qw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="おみくじをひく">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ks-Md-ceA"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ju-hd-3Ut">
+                                <rect key="frame" x="0.0" y="642" width="375" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="結果をシェアする！">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SNS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ip-Nx-z8n"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRe-RM-6gV">
+                                <rect key="frame" x="0.0" y="778" width="375" height="34"/>
+                                <color key="backgroundColor" red="0.78000000000000003" green="0.089999999999999997" blue="0.11799999999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.98039215686274506" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yyv-VW-yw5" firstAttribute="centerY" secondItem="Adh-U3-nK7" secondAttribute="centerY" id="9N6-ii-2wz"/>
+                            <constraint firstItem="Adh-U3-nK7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BJd-Yg-0se"/>
+                            <constraint firstItem="5ju-hd-3Ut" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BPJ-ZS-SbS"/>
+                            <constraint firstItem="kRe-RM-6gV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C95-6t-Y5Q"/>
+                            <constraint firstItem="kRe-RM-6gV" firstAttribute="top" secondItem="5Rt-IG-e7X" secondAttribute="bottom" id="GC5-Pb-4bk"/>
+                            <constraint firstItem="Adh-U3-nK7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="M5f-9V-tLH"/>
+                            <constraint firstItem="5Rt-IG-e7X" firstAttribute="top" secondItem="5ju-hd-3Ut" secondAttribute="bottom" id="MSt-7D-cor"/>
+                            <constraint firstItem="JE3-r2-5sD" firstAttribute="top" secondItem="Adh-U3-nK7" secondAttribute="bottom" id="Nxw-fu-ffQ"/>
+                            <constraint firstItem="Yyv-VW-yw5" firstAttribute="centerX" secondItem="Adh-U3-nK7" secondAttribute="centerX" id="Rsf-UK-YLC"/>
+                            <constraint firstAttribute="trailing" secondItem="5Rt-IG-e7X" secondAttribute="trailing" id="RtE-IM-nrw"/>
+                            <constraint firstItem="5Rt-IG-e7X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VEd-zA-A34"/>
+                            <constraint firstAttribute="trailing" secondItem="kRe-RM-6gV" secondAttribute="trailing" id="WJG-hO-CFa"/>
+                            <constraint firstItem="5ju-hd-3Ut" firstAttribute="top" secondItem="JE3-r2-5sD" secondAttribute="bottom" id="XF0-Qt-pet"/>
+                            <constraint firstItem="Adh-U3-nK7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fvs-J0-UHb"/>
+                            <constraint firstAttribute="trailing" secondItem="5ju-hd-3Ut" secondAttribute="trailing" id="mSd-H5-hMh"/>
+                            <constraint firstAttribute="bottom" secondItem="kRe-RM-6gV" secondAttribute="bottom" id="nUx-T6-aD5"/>
+                            <constraint firstItem="JE3-r2-5sD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pEK-pL-gV4"/>
+                            <constraint firstItem="5Rt-IG-e7X" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ph7-Nv-jGF"/>
+                            <constraint firstItem="JE3-r2-5sD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tgs-cI-OM2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton" destination="5Rt-IG-e7X" id="PBl-ll-Vqp"/>
+                        <outlet property="answerImageView" destination="Adh-U3-nK7" id="GUW-ej-5I1"/>
+                        <outlet property="answerLabel" destination="JE3-r2-5sD" id="CMx-Gm-6r8"/>
+                        <outlet property="defaultLabel" destination="Yyv-VW-yw5" id="S2x-OI-brG"/>
+                        <outlet property="shareButton" destination="5ju-hd-3Ut" id="U0f-ny-hlF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>
